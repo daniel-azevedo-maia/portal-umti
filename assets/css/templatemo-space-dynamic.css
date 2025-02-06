@@ -344,7 +344,7 @@ header
 
 .header-area .main-nav .nav li:last-child a ,
 .background-header .main-nav .nav li:last-child a {
-  color: #fff !important;
+  color: #2a2a2a !important;
   padding: 0px 20px;
   font-weight: 400;
 }
@@ -1573,5 +1573,47 @@ responsive
   }
   .phone-info h4 span i {
     margin-left: 0px;
+  }
+}
+
+/* ---------------------------------------------
+UMTICast Section
+--------------------------------------------- */
+#umticast {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+#umticast .section-heading h2 {
+  font-size: 30px;
+  color: #2a2a2a;
+  font-weight: 700;
+}
+
+#umticast p {
+  font-size: 16px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+#umticast iframe {
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  #umticast iframe {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  #umticast iframe {
+    height: 250px;
   }
 }
