@@ -5,7 +5,7 @@
 
 body {
   font-family: 'Urbanist', sans-serif;
-  background: linear-gradient(to bottom, #f8f9fa, #dce6f5);
+  background: linear-gradient(to bottom, #f8f9fa, #cfcfcf);
   background-attachment: fixed;
   background-size: cover;
   color: #333;
@@ -15,10 +15,21 @@ body {
 }
 
 /* ============================= */
+/*       CORES AJUSTADAS         */
+/* ============================= */
+h2, h5 {
+  color: #a20000; /* Vermelho mais escuro */
+}
+
+.section-heading h2 {
+  color: #a20000;
+}
+
+/* ============================= */
 /*       ESTILOS DA NAVBAR       */
 /* ============================= */
 .navbar {
-  background: linear-gradient(to right, rgb(0, 0, 0), #ad0000);
+  background: linear-gradient(to right, rgb(0, 0, 0), #a20000);
   backdrop-filter: blur(10px);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease-in-out;
@@ -29,6 +40,7 @@ body {
   z-index: 1050;
 }
 
+/* Efeito ao rolar */
 .navbar.scrolled {
   background: linear-gradient(to right, #d64550, #e07a5f);
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
@@ -46,27 +58,8 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #000000;
+  color: #ffdddd;
   transform: scale(1.1);
-}
-
-
-/* Efeito sublinhado animado */
-.navbar-nav .nav-link::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 0;
-  background: #007bff;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: width 0.3s ease-in-out;
-}
-
-.navbar-nav .nav-link:hover::after {
-  width: 100%;
 }
 
 /* ============================= */
@@ -78,17 +71,18 @@ body {
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
 }
 
 .carousel-inner {
   border-radius: 20px;
   width: 100%;
   min-height: 350px;
+  background: transparent;
 }
 
-/* Imagens agora têm transição suave entre elas */
 .carousel-item {
-  transition: transform 1s ease-in-out, opacity 0.8s ease-in-out;
+  transition: none 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 .carousel-item img {
@@ -98,24 +92,11 @@ body {
   border-radius: 20px;
 }
 
-/* Controle de Opacidade na Transição */
-.carousel-item-next,
-.carousel-item-prev,
-.carousel-item.active {
-  display: block;
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-}
-
-.carousel-item:not(.active) {
-  opacity: 0;
-}
-
 /* ============================= */
-/*       AJUSTES GERAIS         */
+/*       ESTILOS GERAIS         */
 /* ============================= */
 .main-banner {
-  padding-top: 150px; /* Ajuste conforme a altura da navbar */
+  padding-top: 150px;
 }
 
 h2, h4, h5 {
@@ -128,11 +109,8 @@ p {
   font-size: 1rem;
 }
 
-/* ============================= */
-/*       ESTILO DOS BOTÕES       */
-/* ============================= */
 .btn-primary {
-  background-color: #007bff;
+  background-color: #a20000;
   border: none;
   padding: 12px 25px;
   border-radius: 25px;
@@ -141,59 +119,68 @@ p {
 }
 
 .btn-primary:hover {
-  background-color: #0056b3;
+  background-color: #7d0000;
   transform: scale(1.05);
 }
 
 /* ============================= */
-/*       ESTILOS DO FOOTER       */
+/*       ESTILO DA APRESENTAÇÃO  */
 /* ============================= */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+#apresentacao {
+  background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+  padding: 80px 0;
   text-align: center;
-  margin-top: 40px;
 }
 
-footer p {
-  margin: 0;
-  font-size: 0.9rem;
+/* Estiliza o título principal com um gradiente dinâmico */
+.title-gradient {
+  font-size: 3rem;
+  background: linear-gradient(to right, #a20000, #d64550);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 900;
+  letter-spacing: 2px;
 }
 
-/* ============================= */
-/*       FUNDO TRANSPARENTE      */
-/* ============================= */
-.section, .bg-light {
-  background: rgba(255, 255, 255, 0.7); /* Transparência de 70% */
-  backdrop-filter: blur(10px); /* Efeito de vidro */
-  padding: 50px 0;
-  border-radius: 10px;
+/* Destaca palavras-chave */
+.highlight-innovation {
+  color: #007bff; /* Azul forte */
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.card {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
-  border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.highlight-tech {
+  color: #d64550; /* Vermelho vibrante */
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+/* Barra divisora elegante */
+.divider {
+  width: 80px;
+  height: 4px;
+  background-color: #a20000;
+  border-radius: 2px;
+  margin-top: 15px;
 }
 
-/* ============================= */
-/*       ESTILO DO MENU HAMBÚRGUER */
-/* ============================= */
-
-/* Cor das três barrinhas do menu */
-.navbar-toggler-icon {
-  filter: invert(1); /* Torna o ícone branco */
+/* Animação suave de entrada */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
 }
 
-/* Opcional: Ajuste para um botão mais visível */
-.navbar-toggler {
-  border-color: rgba(255, 255, 255, 0.6);
+/* Keyframes da animação */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
