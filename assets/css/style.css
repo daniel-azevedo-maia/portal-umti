@@ -207,6 +207,31 @@ p {
   border: none;
 }
 
+/* ============================= */
+/*       MENU HAMBÚRGUER         */
+/* ============================= */
+
+/* Ajuste do botão do menu - contorno branco */
+.navbar-toggler {
+  border: 2px solid rgba(255, 255, 255, 1) !important; /* Borda branca */
+  background-color: transparent !important; /* Fundo transparente */
+  padding: 8px 10px;
+  border-radius: 5px;
+  box-shadow: none !important; /* Remove sombras extras */
+}
+
+/* Ícone das barrinhas do menu - cor branca */
+.navbar-toggler i {
+  color: white !important; /* Garante que o ícone fique branco */
+  font-size: 24px; /* Ajusta o tamanho do ícone */
+}
+
+/* Remove qualquer filtro escuro do ícone */
+.navbar-toggler-icon {
+  filter: invert(1); /* Torna o ícone branco */
+}
+
+
 
 /* ============================= */
 /*       FOOTER ESTILIZADO       */
