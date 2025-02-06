@@ -47,20 +47,24 @@ h2, h5 {
 }
 
 .navbar-nav .nav-link {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #fff;
   position: relative;
-  transition: all 0.3s ease;
-  padding: 10px 12px;
+  transition: all 0.3s ease-in-out;
+  padding: 10px 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  border-radius: 5px; /* Adiciona um leve arredondamento */
 }
 
+/* Efeito ao passar o mouse */
 .navbar-nav .nav-link:hover {
-  color: #ffdddd;
-  transform: scale(1.1);
+  color: #ffbbbb; /* Cor mais clara no hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente visível */
+  transform: scale(1.05); /* Aumenta um pouco o tamanho */
 }
+
 
 /* ============================= */
 /*       ESTILOS DO CARROSSEL    */
@@ -207,31 +211,6 @@ p {
   border: none;
 }
 
-/* ============================= */
-/*       MENU HAMBÚRGUER         */
-/* ============================= */
-
-/* Ajuste do botão do menu - contorno branco */
-.navbar-toggler {
-  border: 2px solid rgba(255, 255, 255, 1) !important; /* Borda branca */
-  background-color: transparent !important; /* Fundo transparente */
-  padding: 8px 10px;
-  border-radius: 5px;
-  box-shadow: none !important; /* Remove sombras extras */
-}
-
-/* Ícone das barrinhas do menu - cor branca */
-.navbar-toggler i {
-  color: white !important; /* Garante que o ícone fique branco */
-  font-size: 24px; /* Ajusta o tamanho do ícone */
-}
-
-/* Remove qualquer filtro escuro do ícone */
-.navbar-toggler-icon {
-  filter: invert(1); /* Torna o ícone branco */
-}
-
-
 
 /* ============================= */
 /*       FOOTER ESTILIZADO       */
@@ -272,4 +251,25 @@ footer .footer-bottom {
   margin-top: 15px;
   font-size: 0.8rem;
   opacity: 0.8;
+}
+
+/* Botão Flutuante */
+.glossario-float {
+  display: flex !important; /* Força a exibição */
+  z-index: 99999 !important; /* Garante que está acima de tudo */
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+}
+
+
+/* Ícone dentro do botão */
+.glossario-float i {
+  font-size: 24px;
+}
+
+/* Efeito ao passar o mouse */
+.glossario-float:hover {
+  background: #7d0000;
+  transform: scale(1.1);
 }
