@@ -1,0 +1,199 @@
+/* ============================= */
+/*       FONT UNIVERSAL          */
+/* ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;700;900&display=swap');
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background: linear-gradient(to bottom, #f8f9fa, #dce6f5);
+  background-attachment: fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ============================= */
+/*       ESTILOS DA NAVBAR       */
+/* ============================= */
+.navbar {
+  background: linear-gradient(to right, rgb(0, 0, 0), #ad0000);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  padding: 15px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1050;
+}
+
+.navbar.scrolled {
+  background: linear-gradient(to right, #d64550, #e07a5f);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #000000;
+  transform: scale(1.1);
+}
+
+
+/* Efeito sublinhado animado */
+.navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: #007bff;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ============================= */
+/*       ESTILOS DO CARROSSEL    */
+/* ============================= */
+.carousel {
+  max-width: 600px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+  border-radius: 20px;
+  width: 100%;
+  min-height: 350px;
+}
+
+/* Imagens agora têm transição suave entre elas */
+.carousel-item {
+  transition: transform 1s ease-in-out, opacity 0.8s ease-in-out;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Controle de Opacidade na Transição */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: block;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-item:not(.active) {
+  opacity: 0;
+}
+
+/* ============================= */
+/*       AJUSTES GERAIS         */
+/* ============================= */
+.main-banner {
+  padding-top: 150px; /* Ajuste conforme a altura da navbar */
+}
+
+h2, h4, h5 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+/* ============================= */
+/*       ESTILO DOS BOTÕES       */
+/* ============================= */
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ============================= */
+/*       ESTILOS DO FOOTER       */
+/* ============================= */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ============================= */
+/*       FUNDO TRANSPARENTE      */
+/* ============================= */
+.section, .bg-light {
+  background: rgba(255, 255, 255, 0.7); /* Transparência de 70% */
+  backdrop-filter: blur(10px); /* Efeito de vidro */
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================= */
+/*       ESTILO DO MENU HAMBÚRGUER */
+/* ============================= */
+
+/* Cor das três barrinhas do menu */
+.navbar-toggler-icon {
+  filter: invert(1); /* Torna o ícone branco */
+}
+
+/* Opcional: Ajuste para um botão mais visível */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.6);
+}

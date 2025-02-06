@@ -2,45 +2,30 @@
 <html lang="pt-br">
 
 <head>
+  <!-- 
+    =============================================
+    Autor: Daniel Azevedo de Oliveira Maia
+    Projeto: Navbar Responsiva e Página Institucional
+    Data: 2025
+    =============================================
+    -->
+
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UMTI/JP - Inovação e tecnologia para modernizar serviços públicos.">
+  <meta name="author" content="Daniel Azevedo de Oliveira Maia">
 
-  <title>UMTI</title>
+  <title>UMTI - PMJP</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
-  <link rel="stylesheet" href="assets/css/animated.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
+  <!-- Ícones do Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
-
-  <style>
-    .logo img {
-      max-width: 150px;
-      height: auto;
-    }
-
-    .header-area {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .carousel-image {
-      height: 400px;
-      object-fit: cover;
-    }
-  </style>
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -57,98 +42,83 @@
   </div>
   <!-- ***** Preloader End ***** -->
 
-  <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky">
+  <!-- ***** Navbar Start ***** -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-              <img src="assets/images/banner.png" alt="UMTI Logo">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-              <li class="scroll-to-section"><a href="#solucoes">Soluções</a></li>
-              <li class="scroll-to-section"><a href="#lgpd">Cartilha LGPD</a></li>
-              <li class="scroll-to-section"><a href="#sobre">Sobre nós</a></li>
-              <li class="scroll-to-section"><a href="#manual">Manual da Identidade Visual</a></li>
-              <li class="scroll-to-section"><a href="#noticias">Notícias</a></li>
-              <li class="scroll-to-section"><a href="#umticast">UMTICast</a></li>
-              <li class="scroll-to-section"><a href="#contato">Contato</a></li>
-            </ul>
-            <a class="menu-trigger">
-              <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
-        </div>
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/images/umti-logo.png" alt="UMTI Logo" style="height: 50px;">
+      </a>
+
+      <!-- Botão do menu hamburguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir Menu de Navegação">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Itens do menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#lgpd">Cartilha LGPD</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#manual">Manual</a></li>
+          <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
+          <li class="nav-item"><a class="nav-link" href="#umticast">UMTICast</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
       </div>
     </div>
-  </header>
-  <!-- ***** Header Area End ***** -->
+  </nav>
+  <!-- ***** Navbar End ***** -->
 
   <!-- ***** Main Banner Start ***** -->
   <div class="main-banner" id="top">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="row">
-            <!-- Left Content -->
-            <div class="col-lg-6 align-self-center">
-              <div class="left-content">
-                <h6>Bem-vindo à UMTI/JP!</h6>
-                <h2>
-                  Transformando <em>Inovação</em> &amp; <span>Tecnologia</span>
-                </h2>
-                <p>
-                  Desde 2007, lideramos a inovação tecnológica para aumentar a eficiência e a conectividade
-                  nos serviços públicos da Prefeitura Municipal de João Pessoa. Nosso compromisso é transformar
-                  a cidade com projetos que simplifiquem processos, garantam segurança digital e promovam a inclusão.
-                </p>
+      <div class="row align-items-center">
+        <!-- Texto -->
+        <div class="col-lg-6">
+          <div class="left-content">
+            <h6>Bem-vindo à UMTI/JP</h6>
+            <h2>
+              Transformando <em>Inovação</em> &amp; <span>Tecnologia</span>
+            </h2>
+            <p>
+              Desde 2007, lideramos a inovação tecnológica para aumentar a eficiência e a conectividade nos serviços
+              públicos da Prefeitura Municipal de João Pessoa (PMJP). Nosso compromisso é transformar a cidade com
+              projetos que simplifiquem processos, garantam segurança digital e promovam a inclusão.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Carrossel -->
+        <div class="col-lg-6">
+          <div class="carousel shadow-lg rounded" id="bannerCarousel" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/img1.jpeg" class="d-block w-100" alt="Imagem 1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/img2.jpeg" class="d-block w-100" alt="Imagem 2">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/img3.jpeg" class="d-block w-100" alt="Imagem 3">
               </div>
             </div>
-            <!-- Right Image - Carousel -->
-            <div class="col-lg-6">
-              <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000"
-                data-bs-pause="false">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="assets/images/img1.jpeg" class="carousel-image d-block w-100" alt="Imagem 1">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/images/img2.jpeg" class="carousel-image d-block w-100" alt="Imagem 2">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/images/img3.jpeg" class="carousel-image d-block w-100" alt="Imagem 3">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/images/img5.jpeg" class="carousel-image d-block w-100" alt="Imagem 5">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="assets/images/img6.jpeg" class="carousel-image d-block w-100" alt="Imagem 6">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel"
-                  data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel"
-                  data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Próximo</span>
-                </button>
-              </div>
-            </div>
-            <!-- Right Image - Carousel End -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- ***** Main Banner End ***** -->
+
 
   <!-- ***** Soluções Start ***** -->
   <section id="solucoes" class="py-5 bg-light mt-5">
@@ -283,38 +253,57 @@
 
   <div id="sobre" class="section py-5" style="background: linear-gradient(to bottom, #f8f9fa, #e9ecef);">
     <div class="container">
-      <div class="section-heading text-center mb-4">
-        <h2 class="text-primary fw-bold" style="font-size: 2rem; letter-spacing: 0.5px;">Sobre a UMTI/JP</h2>
-        <div style="border-bottom: 2px solid #007bff; width: 50px; margin: 0 auto 15px;"></div>
+      <div class="section-heading text-center mb-5">
+        <h2 class="text-primary fw-bold" style="font-size: 2.2rem; letter-spacing: 0.5px;">Sobre a UMTI/JP</h2>
+        <div style="border-bottom: 3px solid #007bff; width: 60px; margin: 0 auto 15px;"></div>
       </div>
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <p class="text-muted" style="text-align: justify; line-height: 1.6; font-size: 1rem;">
-            A <strong>UMTI/JP (Unidade Municipal de Telecomunicações e Informática de João Pessoa)</strong> é o braço
-            tecnológico da Prefeitura Municipal de João Pessoa. Criada pela Lei nº 11.003 de 17 de abril de 2007, a
-            UMTI/JP lidera a transformação digital da cidade, promovendo eficiência nos serviços públicos e aproximando
-            cidadãos da inovação.
-          </p>
-          <p class="text-muted" style="text-align: justify; line-height: 1.6; font-size: 1rem;">
-            Com uma população de quase <strong>818.000 habitantes</strong> e um crescimento turístico expressivo, João
-            Pessoa demanda soluções tecnológicas que atendam às necessidades de quem vive, trabalha e visita a cidade. A
-            UMTI/JP desenvolve, implementa e mantém projetos que integram tecnologia e gestão pública, garantindo uma
-            cidade mais conectada, sustentável e eficiente.
-          </p>
-          <p class="text-muted" style="text-align: justify; line-height: 1.6; font-size: 1rem;">
-            Nosso compromisso vai além da inovação. Buscamos proporcionar <strong>qualidade de vida</strong> aos
-            cidadãos, respeitando a <strong>segurança e a privacidade dos dados</strong>, promovendo <strong>inclusão
-              digital</strong> e construindo uma infraestrutura robusta e confiável. Acreditamos que a tecnologia é o
-            caminho para simplificar processos, reduzir custos e criar oportunidades para todos.
-          </p>
-          <p class="text-muted" style="text-align: justify; line-height: 1.6; font-size: 1rem;">
-            Por isso, a UMTI/JP continua investindo em projetos inovadores, posicionando João Pessoa como uma referência
-            em transformação digital e gestão pública eficiente.
-          </p>
+          <div class="about-content bg-white p-4 rounded shadow-sm">
+            <h4 class="fw-bold text-dark mb-3 text-center">Transformação Digital em João Pessoa</h4>
+            <p class="text-muted text-justify" style="line-height: 1.8; font-size: 1rem;">
+              A <strong>UMTI/JP (Unidade Municipal de Telecomunicações e Informática de João Pessoa)</strong> é o setor
+              de tecnologia da Prefeitura Municipal de João Pessoa. Criada pela Lei nº 11.003 de 17 de abril de 2007, a
+              unidade é responsável pela modernização dos serviços públicos, tornando-os mais eficientes e acessíveis.
+            </p>
+            <p class="text-muted text-justify" style="line-height: 1.8; font-size: 1rem;">
+              João Pessoa possui uma população de aproximadamente <strong>818.000 habitantes</strong> e um fluxo
+              turístico crescente. Para atender às demandas da cidade, a UMTI/JP desenvolve e implementa soluções
+              tecnológicas que integram inovação e gestão pública, promovendo conectividade, sustentabilidade e
+              eficiência.
+            </p>
+
+            <h5 class="fw-bold text-dark mt-4">Compromisso com a Inovação</h5>
+            <p class="text-muted text-justify" style="line-height: 1.8; font-size: 1rem;">
+              A tecnologia deve ser acessível a todos. Por isso, investimos continuamente em infraestrutura digital e
+              soluções inteligentes que facilitam o dia a dia da população, promovem transparência e garantem mais
+              segurança digital.
+            </p>
+
+            <h5 class="fw-bold text-dark mt-4">Nossos Valores</h5>
+            <ul class="text-muted" style="list-style: none; padding-left: 0;">
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Eficiência:</strong>
+                Serviços públicos rápidos e acessíveis.</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Transparência:</strong>
+                Facilitação do acesso à informação.</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Inclusão Digital:</strong>
+                Democratização do uso da tecnologia.</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Segurança:</strong>
+                Proteção de dados e privacidade.</li>
+              <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> <strong>Inovação:</strong> Adoção
+                de tecnologias avançadas.</li>
+            </ul>
+
+            <p class="text-muted text-center mt-4" style="font-style: italic;">
+              "Acreditamos que a tecnologia simplifica processos, reduz custos e cria oportunidades para todos. João
+              Pessoa está no caminho da inovação."
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
 
   <div class="section py-16 bg-light">
     <div class="container">
@@ -444,36 +433,60 @@
 
 
       <!-- ***** Contato Start ***** -->
-
-      <div id="contato" class="section py-5">
-        <div class="container">
-          <div class="section-heading text-center mb-4">
-            <h2 class="text-primary fw-bold">Contato</h2>
-            <p class="text-muted">Entre em contato para mais informações sobre nossos serviços.</p>
-          </div>
-          <form id="contact" action="" method="post">
-            <div class="row justify-content-center">
-              <div class="col-lg-6 mb-3">
-                <input type="text" name="name" id="name" placeholder="Nome" class="form-control border-0 shadow-sm"
-                  required>
-              </div>
-              <div class="col-lg-6 mb-3">
-                <input type="email" name="email" id="email" placeholder="E-mail" class="form-control border-0 shadow-sm"
-                  required>
-              </div>
-              <div class="col-lg-12 mb-3">
-                <textarea name="message" id="message" placeholder="Mensagem" class="form-control border-0 shadow-sm"
-                  rows="5" required></textarea>
-              </div>
-              <div class="col-lg-12 text-center">
-                <button type="submit" class="btn btn-primary px-5 py-2">Enviar</button>
-              </div>
-            </div>
-          </form>
-        </div>
+<div id="contato" class="section py-5 bg-light">
+  <div class="container">
+      <div class="section-heading text-center mb-4">
+          <h2 class="text-primary fw-bold">Entre em Contato</h2>
+          <p class="text-muted">Fale conosco para mais informações sobre nossos serviços.</p>
       </div>
-      <!-- ***** Contato End ***** -->
 
+      <div class="row justify-content-center">
+          <!-- Informações de contato -->
+          <div class="col-md-5">
+              <div class="contact-info p-4 bg-white shadow-sm rounded text-center">
+                  <div class="mb-4">
+                      <i class="fas fa-map-marker-alt fa-3x text-danger"></i>
+                      <h5 class="fw-bold mt-2">Endereço</h5>
+                      <p class="text-muted">Rua Exemplo, 123 - João Pessoa, PB</p>
+                  </div>
+                  <div class="mb-4">
+                      <i class="fas fa-phone-alt fa-3x text-success"></i>
+                      <h5 class="fw-bold mt-2">Telefone</h5>
+                      <p class="text-muted">(83) 1234-5678</p>
+                  </div>
+                  <div class="mb-4">
+                      <i class="fas fa-envelope fa-3x text-primary"></i>
+                      <h5 class="fw-bold mt-2">E-mail</h5>
+                      <p class="text-muted">contato@umti.jp.gov.br</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Formulário de contato -->
+          <div class="col-md-6">
+              <div class="bg-white p-4 shadow-sm rounded">
+                  <form id="contact" action="" method="post">
+                      <div class="mb-3">
+                          <input type="text" name="name" id="name" placeholder="Seu Nome" class="form-control border-0 shadow-sm" required>
+                      </div>
+                      <div class="mb-3">
+                          <input type="email" name="email" id="email" placeholder="Seu E-mail" class="form-control border-0 shadow-sm" required>
+                      </div>
+                      <div class="mb-3">
+                          <textarea name="message" id="message" placeholder="Sua Mensagem" class="form-control border-0 shadow-sm" rows="5" required></textarea>
+                      </div>
+                      <div class="text-center">
+                          <button type="submit" class="btn btn-primary px-5 py-2">Enviar</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<!-- ***** Contato End ***** -->
+
+      <!-- ***** Footer Start ***** -->
       <footer>
         <div class="container">
           <div class="row">
@@ -483,15 +496,29 @@
           </div>
         </div>
       </footer>
+      <!-- ***** Footer End ***** -->
+
       <!-- Scripts -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/owl-carousel.js"></script>
-      <script src="assets/js/animation.js"></script>
-      <script src="assets/js/imagesloaded.js"></script>
-      <script src="assets/js/templatemo-custom.js"></script>
+      <script src="assets/js/script.js"></script>
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <script>
+        ScrollReveal().reveal('.main-banner, .section', {
+          duration: 700,  // Reduzido de 1200 para 700ms
+          distance: '30px',  // Reduzido de 50px para 30px
+          easing: 'ease-in-out',
+          origin: 'bottom'
+        });
+
+        ScrollReveal().reveal('.card', {
+          duration: 600,  // Reduzido de 1000 para 600ms
+          distance: '20px',  // Reduzido de 30px para 20px
+          easing: 'ease-in-out',
+          origin: 'bottom',
+          interval: 100  // Reduzido de 200 para 100ms
+        });
+
+      </script>
 
 </body>
-
 
 </html>
