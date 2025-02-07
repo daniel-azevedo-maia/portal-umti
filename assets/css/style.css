@@ -236,46 +236,7 @@ p {
 }
 
 
-/* ============================= */
-/*       FOOTER ESTILIZADO       */
-/* ============================= */
-footer {
-  background: linear-gradient(to right, #a20000, #7d0000);
-  color: #fff;
-  padding: 30px 0;
-  text-align: center;
-  font-size: 1rem;
-  position: relative;
-}
 
-footer .footer-logo {
-  max-width: 150px;
-  margin-bottom: 10px;
-}
-
-footer .social-icons a {
-  display: inline-block;
-  margin: 0 10px;
-  font-size: 24px;
-  color: #fff;
-  transition: transform 0.3s ease-in-out;
-}
-
-footer .social-icons a:hover {
-  transform: scale(1.2);
-  color: #ffd700;
-}
-
-footer p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-}
-
-footer .footer-bottom {
-  margin-top: 15px;
-  font-size: 0.8rem;
-  opacity: 0.8;
-}
 
 /* Botão Flutuante */
 /* Estilo do botão flutuante do Glossário */
@@ -343,4 +304,62 @@ footer .footer-bottom {
   color: #ffffff;
   border-color: #7d0000;
   transform: scale(1.05);
+}
+/* ============================= */
+/*       FOOTER ESTILIZADO       */
+/* ============================= */
+footer {
+  background: linear-gradient(to right, #a20000, #7d0000);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+footer .footer-logo {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+footer .footer-links {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+footer .footer-links a {
+  color: #ffd700; /* Amarelo ouro para destacar */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease-in-out;
+  padding: 0 8px; /* Adicionando espaçamento entre os links */
+}
+
+footer .footer-links a:hover {
+  color: #fff; /* Fica branco ao passar o mouse */
+  text-decoration: underline;
+}
+
+/* Ícones das redes sociais */
+footer .social-icons {
+  margin: 15px 0;
+}
+
+footer .social-icons a {
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 22px;
+  color: #ffd700; /* Ícones amarelo ouro */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+footer .social-icons a:hover {
+  transform: scale(1.2);
+  color: #fff; /* Fica branco ao passar o mouse */
+}
+
+footer .footer-bottom {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  opacity: 0.7;
 }
