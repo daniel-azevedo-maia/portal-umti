@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- Favicon -->
-<link rel="icon" type="image/png" href="assets/images/logo.png">
+  <link rel="icon" type="image/png" href="assets/images/logo.png">
 
 </head>
 
@@ -59,11 +59,20 @@
           <li class="nav-item"><a class="nav-link" href="#solucoes">Soluções</a></li>
           <li class="nav-item"><a class="nav-link" href="#lgpd">Cartilha LGPD</a></li>
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
-          <li class="nav-item"><a class="nav-link" href="#manual">Manual da Identidade Visual</a></li>
+          <!--          <li class="nav-item"><a class="nav-link" href="#manual">Manual da Identidade Visual</a></li>-->
           <!-- Adicionado -->
           <li class="nav-item"><a class="nav-link" href="#noticias">Notícias</a></li>
-          <li class="nav-item"><a class="nav-link" href="#umticast">UMTICast</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+          <li class="nav-item">
+            <a class="nav-link d-flex align-items-center" href="#tictalks">
+              <i class="fas fa-microphone-alt me-2" style="color: #ffd700; font-size: 18px;"></i>
+              <span>TICTalks</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-contato" href="#contato">Contato</a>
+        </li>
+        
+
         </ul>
       </div>
     </div>
@@ -271,86 +280,84 @@
   <section id="glossario" class="py-5 bg-white">
     <div class="container">
       <div class="text-center mb-4">
-        <h2>Glossário Tecnológico</h2>
+        <h2 class="title-gradient">Glossário Tecnológico</h2>
         <p class="text-muted">Termos essenciais para entender as inovações da UMTI/JP.</p>
+        <div class="divider"></div>
       </div>
-      <ul class="list-group">
-        <li class="list-group-item"><strong>Fibra Óptica:</strong> Tecnologia de transmissão de dados por luz,
-          garantindo alta velocidade.</li>
-        <li class="list-group-item"><strong>GPON:</strong> Rede de fibra óptica de alto desempenho.</li>
-        <li class="list-group-item"><strong>XGS-PON:</strong> Tecnologia que permite velocidades ainda mais rápidas.
-        </li>
-        <li class="list-group-item"><strong>Data Center:</strong> Infraestrutura para armazenamento e processamento de
-          dados.</li>
-        <li class="list-group-item"><strong>LGPD:</strong> Lei Geral de Proteção de Dados.</li>
-        <li class="list-group-item"><strong>VoIP:</strong> Tecnologia que permite chamadas telefônicas via internet.
-        </li>
-        <li class="list-group-item"><strong>5G:</strong> Rede móvel de alta velocidade.</li>
-        <li class="list-group-item"><strong>LoraWAN:</strong> Rede sem fio de longo alcance usada para IoT.</li>
-        <li class="list-group-item"><strong>SmartCity:</strong> Cidades inteligentes que utilizam tecnologia para
-          melhorar a qualidade de vida.</li>
-      </ul>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <ul class="list-group list-group-flush shadow-sm rounded">
+            <li class="list-group-item"><strong>5G:</strong> Rede móvel de alta velocidade e baixa latência.</li>
+            <li class="list-group-item"><strong>Data Center:</strong> Infraestrutura para armazenamento e processamento
+              de dados.</li>
+            <li class="list-group-item"><strong>Fibra Óptica:</strong> Tecnologia de transmissão de dados por luz,
+              garantindo alta velocidade.</li>
+            <li class="list-group-item"><strong>GPON:</strong> Rede de fibra óptica de alto desempenho.</li>
+            <li class="list-group-item"><strong>Inteligência Artificial (IA):</strong> Tecnologia que simula a
+              inteligência humana para otimizar processos e interações.</li>
+            <li class="list-group-item"><strong>Internet Pública:</strong> Projeto de disponibilização de Wi-Fi gratuito
+              em praças, parques e terminais de transporte público.</li>
+            <li class="list-group-item"><strong>LGPD:</strong> Lei Geral de Proteção de Dados, que regula o tratamento
+              de dados pessoais.</li>
+            <li class="list-group-item"><strong>LoraWAN:</strong> Rede sem fio de longo alcance utilizada para
+              aplicações de Internet das Coisas (IoT).</li>
+            <li class="list-group-item"><strong>Monitoramento Inteligente:</strong> Uso de tecnologia para vigilância e
+              segurança pública por meio de câmeras conectadas.</li>
+            <li class="list-group-item"><strong>POLAN (Passive Optical LAN):</strong> Rede local baseada em fibra óptica
+              passiva, proporcionando maior eficiência e menor custo operacional.</li>
+            <li class="list-group-item"><strong>Rede Neutra:</strong> Infraestrutura compartilhada que permite que
+              várias operadoras utilizem a mesma rede para ofertar conectividade.</li>
+            <li class="list-group-item"><strong>Redundância:</strong> Estratégia para garantir continuidade operacional,
+              evitando falhas de conexão e armazenamento.</li>
+            <li class="list-group-item"><strong>SmartCity:</strong> Conceito de cidades inteligentes que utilizam
+              tecnologia para melhorar a qualidade de vida dos cidadãos.</li>
+            <li class="list-group-item"><strong>VoIP:</strong> Tecnologia que permite chamadas telefônicas via internet.
+            </li>
+            <li class="list-group-item"><strong>XGS-PON:</strong> Tecnologia de rede óptica que permite velocidades
+              ainda mais rápidas.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
   <!-- ***** Glossário end ***** -->
 
   <!-- ***** Missão, Visão e Valores Start ***** -->
-<section id="missao-visao-valores" class="py-5 bg-white">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2>Missão, Visão e Valores</h2>
-      <p class="text-muted">Conheça os princípios que norteiam a UMTI/JP.</p>
-    </div>
-
-    <div class="row">
-      <!-- Missão -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm p-4 text-center">
-          <h4 class="fw-bold text-dark">Missão</h4>
-          <p class="text-muted">Promover ganho de produtividade na prestação de serviço público municipal.</p>
-        </div>
+  <section id="missao-visao-valores" class="py-5 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Missão, Visão e Valores</h2>
+        <p class="text-muted">Conheça os princípios que norteiam a UMTI/JP.</p>
       </div>
 
-      <!-- Visão -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm p-4 text-center">
-          <h4 class="fw-bold text-dark">Visão</h4>
-          <p class="text-muted">Ser referência em inovação e gestão de recursos de Telecomunicações e Informática.</p>
-        </div>
-      </div>
-
-      <!-- Valores -->
-      <div class="col-md-4">
-        <div class="card border-0 shadow-sm p-4 text-center">
-          <h4 class="fw-bold text-dark">Valores</h4>
-          <p class="text-muted">Os princípios que guiam nossa atuação.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Lista de Valores -->
-    <div class="mt-5">
-      <h3 class="text-center fw-bold text-dark mb-4">Nossos Valores</h3>
       <div class="row">
-        <div class="col-md-6">
-          <ul class="list-group">
-            <li class="list-group-item"><strong>Acessibilidade:</strong> Garantia de soluções inclusivas.</li>
-            <li class="list-group-item"><strong>Ética:</strong> Priorizar de forma transparente o interesse do cliente.</li>
-            <li class="list-group-item"><strong>Inovação:</strong> Aprimoramento contínuo da oferta de serviços.</li>
-          </ul>
+        <!-- Missão -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 text-center">
+            <h4 class="fw-bold text-dark">Missão</h4>
+            <p class="text-muted">Promover ganho de produtividade na prestação de serviço público municipal.</p>
+          </div>
         </div>
-        <div class="col-md-6">
-          <ul class="list-group">
-            <li class="list-group-item"><strong>Padronização:</strong> Integração de soluções para maior eficiência.</li>
-            <li class="list-group-item"><strong>Segurança:</strong> Compromisso com a privacidade e proteção de dados.</li>
-          </ul>
+
+        <!-- Visão -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 text-center">
+            <h4 class="fw-bold text-dark">Visão</h4>
+            <p class="text-muted">Ser referência em inovação e gestão de recursos de Telecomunicações e Informática.</p>
+          </div>
+        </div>
+
+        <!-- Valores -->
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm p-4 text-center">
+            <h4 class="fw-bold text-dark">Valores</h4>
+            <p class="text-muted">Acessibilidade, ética, inovação, padronização e segurança.</p>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
-</section>
-<!-- ***** Missão, Visão e Valores End ***** -->
+  </section>
+  <!-- ***** Missão, Visão e Valores End ***** -->
 
 
   <!-- ***** Sobre Nós Start ***** -->
@@ -515,18 +522,18 @@
         </div>
       </div>
 
-      <!-- ***** UMTICast Start ***** -->
-      <section id="umticast" class="section py-5 bg-light mt-5">
+      <!-- ***** TICTalks Start ***** -->
+      <section id="tictalks" class="section py-5 bg-light mt-5">
         <div class="container">
           <div class="section-heading text-center mb-5">
-            <h2>UMTICast</h2>
+            <h2>TICTalks</h2>
             <p class="text-muted">Assista ao nosso último episódio e fique por dentro das novidades da UMTI/JP.</p>
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-8">
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" width="100%" height="400"
-                  src="https://www.youtube.com/embed/sJ_9WE8qFTA" title="UMTICast - Episódio Atual" frameborder="0"
+                  src="https://www.youtube.com/embed/sJ_9WE8qFTA" title="TICTalks - Episódio Atual" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen>
                 </iframe>
@@ -535,7 +542,7 @@
           </div>
         </div>
       </section>
-      <!-- ***** UMTICast End ***** -->
+      <!-- ***** TICTalks End ***** -->
 
 
       <!-- ***** Contato Start ***** -->
@@ -558,12 +565,12 @@
                 <div class="mb-4">
                   <i class="fas fa-phone-alt fa-3x text-success"></i>
                   <h5 class="fw-bold mt-2">Telefone</h5>
-                  <p class="text-muted">(83) 1234-5678</p>
+                  <p class="text-muted">(83) 3213-5263</p>
                 </div>
                 <div class="mb-4">
                   <i class="fas fa-envelope fa-3x text-primary"></i>
                   <h5 class="fw-bold mt-2">E-mail</h5>
-                  <p class="text-muted">contato@umti.jp.gov.br</p>
+                  <p class="text-muted">umti.comunicacao@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -612,14 +619,12 @@
         </div>
       </footer>
       <!-- ***** Footer End ***** -->
-      <!-- Botão Flutuante do Glossário -->
-      <!-- Botão Flutuante do Glossário -->
-<a href="#glossario" class="glossario-float" title="Glossário">
-  <span class="glossario-label">Glossário UMTI</span>
-  <i class="fas fa-book"></i>
-</a>
 
-
+      <!-- Botão Flutuante do Glossário -->
+      <a href="#glossario" class="glossario-float" title="Glossário">
+        <span class="glossario-label">Glossário UMTI</span>
+        <i class="fas fa-book"></i>
+      </a>
 
       <!-- Scripts -->
       <script src="assets/js/script.js"></script>
@@ -641,28 +646,28 @@
         });
 
       </script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const glossarioLink = document.querySelector(".glossario-float");
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const glossarioLink = document.querySelector(".glossario-float");
 
-    if (glossarioLink) {
-      glossarioLink.addEventListener("click", function (event) {
-        event.preventDefault();
-        const target = document.querySelector("#glossario");
+          if (glossarioLink) {
+            glossarioLink.addEventListener("click", function (event) {
+              event.preventDefault();
+              const target = document.querySelector("#glossario");
 
-        if (target) {
-          const offset = 100; // Ajuste para compensar a navbar fixa
-          const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
+              if (target) {
+                const offset = 100; // Ajuste para compensar a navbar fixa
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - offset;
 
-          window.scrollTo({
-            top: targetPosition,
-            behavior: "smooth"
-          });
-        }
-      });
-    }
-  });
-</script>
+                window.scrollTo({
+                  top: targetPosition,
+                  behavior: "smooth"
+                });
+              }
+            });
+          }
+        });
+      </script>
 
 </body>
 

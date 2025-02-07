@@ -17,8 +17,10 @@ body {
 /* ============================= */
 /*       CORES AJUSTADAS         */
 /* ============================= */
-h2, h5 {
-  color: #a20000; /* Vermelho mais escuro */
+h2,
+h5 {
+  color: #a20000;
+  /* Vermelho mais escuro */
 }
 
 .section-heading h2 {
@@ -55,14 +57,29 @@ h2, h5 {
   padding: 10px 14px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-radius: 5px; /* Adiciona um leve arredondamento */
+  border-radius: 5px;
+  /* Adiciona um leve arredondamento */
+  display: flex;
+  align-items: center;
 }
 
 /* Efeito ao passar o mouse */
 .navbar-nav .nav-link:hover {
-  color: #ffbbbb; /* Cor mais clara no hover */
-  background-color: rgba(255, 255, 255, 0.1); /* Fundo levemente visível */
-  transform: scale(1.05); /* Aumenta um pouco o tamanho */
+  color: #ffbbbb;
+  /* Cor mais clara no hover */
+  background-color: rgba(255, 255, 255, 0.1);
+  /* Fundo levemente visível */
+  transform: scale(1.05);
+  /* Aumenta um pouco o tamanho */
+}
+
+.navbar .nav-item .nav-link i {
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar .nav-item .nav-link:hover i {
+  transform: scale(1.2);
+  color: #ffbb33;
 }
 
 
@@ -103,7 +120,9 @@ h2, h5 {
   padding-top: 150px;
 }
 
-h2, h4, h5 {
+h2,
+h4,
+h5 {
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -150,13 +169,15 @@ p {
 
 /* Destaca palavras-chave */
 .highlight-innovation {
-  color: #007bff; /* Azul forte */
+  color: #007bff;
+  /* Azul forte */
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .highlight-tech {
-  color: #d64550; /* Vermelho vibrante */
+  color: #d64550;
+  /* Vermelho vibrante */
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -183,6 +204,7 @@ p {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -195,10 +217,12 @@ p {
 .video-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* Proporção 16:9 */
+  padding-bottom: 56.25%;
+  /* Proporção 16:9 */
   height: 0;
   overflow: hidden;
-  border-radius: 10px; /* Cantos arredondados */
+  border-radius: 10px;
+  /* Cantos arredondados */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -280,7 +304,6 @@ footer .footer-bottom {
   transform: scale(1.1);
 }
 
-/* Estilo do texto acima do ícone */
 .glossario-label {
   font-size: 12px;
   font-weight: bold;
@@ -288,7 +311,32 @@ footer .footer-bottom {
   color: white;
   padding: 3px 8px;
   border-radius: 5px;
-  margin-bottom: 5px; /* Espaço entre o texto e o ícone */
+  margin-bottom: 5px;
   text-transform: uppercase;
   white-space: nowrap;
+}
+
+/* ============================= */
+/*       BOTÃO CONTATO           */
+/* ============================= */
+.btn-contato {
+  background-color: #7d0000;
+  /* Vermelho escuro elegante */
+  color: #f8f9fa;
+  /* Cinza claro para melhor legibilidade */
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  border: 1.5px solid #a20000;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-contato:hover {
+  background-color: #a20000;
+  color: #ffffff;
+  border-color: #7d0000;
+  transform: scale(1.05);
 }
