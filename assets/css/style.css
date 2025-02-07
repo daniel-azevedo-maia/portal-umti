@@ -254,22 +254,41 @@ footer .footer-bottom {
 }
 
 /* Botão Flutuante */
+/* Estilo do botão flutuante do Glossário */
 .glossario-float {
-  display: flex !important; /* Força a exibição */
-  z-index: 99999 !important; /* Garante que está acima de tudo */
-  position: fixed !important;
-  bottom: 20px !important;
-  right: 20px !important;
-}
-
-
-/* Ícone dentro do botão */
-.glossario-float i {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #a20000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
   font-size: 24px;
+  transition: transform 0.2s ease-in-out, background 0.3s;
 }
 
-/* Efeito ao passar o mouse */
 .glossario-float:hover {
   background: #7d0000;
   transform: scale(1.1);
+}
+
+/* Estilo do texto acima do ícone */
+.glossario-label {
+  font-size: 12px;
+  font-weight: bold;
+  background: #a20000;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+  margin-bottom: 5px; /* Espaço entre o texto e o ícone */
+  text-transform: uppercase;
+  white-space: nowrap;
 }
